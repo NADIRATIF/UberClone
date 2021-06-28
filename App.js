@@ -1,13 +1,16 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import HomeScreen from "./src/screen/Home/Home.Screen";
+import DestinationScreen from "./src/screen/DestinationSearch/Destination.Screen";
+import {SafeAreaView} from "react-native";
 
 
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
-        <HomeScreen/>
+        <SafeAreaView>
+            <DestinationScreen/>
+        </SafeAreaView>
+        <StatusBar style="auto" />
     </>
   );
 }
